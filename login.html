@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bs5/bs5.css">
+    <link rel="stylesheet" type="text/css" href="css/task.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="js/bs5/bundlemin.js"></script>
+    <title>@Rails_tutorials</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="task.html">
+          <i class="fa fa-home"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a href="task.html" class="nav-link text-white">Home</a>
+            </li>  
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">About</a>
+            </li>  
+            <li class="nav-item dropdown">
+              <a href="#" class="text-white nav-link dropdown-toggle" id="blogdropdown"  role="button" data-bs-toggle="dropdown" aria-expanded="false">Blogs</a>
+              <ul class="dropdown-menu" aria-labelledby="#blogdropdown">
+                <li>
+                  <a href="blogs.html" class=" dropdown-item">Blogs</a>
+                </li>
+                <li>
+                  <a href="archive.html" class=" dropdown-item">Archive</a>
+                </li>
+              </ul>
+            </li>        
+          </ul>
+          <ul class="nav navbar-nav navbar-right ">
+            <a href="login.html" class="nav-link text-white">Login</a>
+            <a href="#offcanvasexample" data-bs-toggle="offcanvas" class="nav-link text-white" aria-control="offcanvasexample">Contact</a>
+          </ul>
+          <div>
+            <div class="offcanvas offcanvas-end"id="offcanvasexample">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Contact</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <form>
+                  <div class="form-group mb-3 fw-bold">
+                    <label class="form-label">First name</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="form-group mb-3 fw-bold">
+                    <label class="form-label">Last name</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="form-group mb-3 fw-bold">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                  <div class="form-group mb-3  fw-bold">
+                    <label class="form-label">Contact No</label>
+                    <input type="tel" class="form-control">
+                  </div>
+                  <div class="form-group mb-3 fw-bold">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" type="text"></textarea>
+                  </div>
+                  <a href="#" class="btn btn-md  btn-danger  d-grid">Send</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="card shadow mt-5">
+            <div class="card-header">
+              <h2 class="text-center">Login</h2>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6 border-end p-3">
+                  <form>
+                    <div class="form-group mb-3">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group mb-3">
+                      <label class="form-label">Password</label>
+                      <input type="Password" class="form-control">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input">
+                          <label class="form-label">Remember me</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 text-end">
+                        <p><a href="#">Forget your password?</a></p>
+                      </div>
+                    </div>
+                    <div class="form-group d-grid mt-2">
+                      <input type="submit" value="Log in" class="btn btn-danger btn-lg">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <div class="text-center">
+                    <h4>Creat account with social link</h4>
+                    <div class="mt-4">
+                      <a class="btn btn-danger btn-block">
+                        <i class="fab fa-google">Login with google</i>
+                      </a>
+                    </div>
+                    <div class="mt-3">
+                      <a class="btn btn-dark btn-block">
+                        <i class="fab fa-github">login with github</i>
+                      </a>
+                      <h6 class="text-center pt-3">OR</h6>
+                      <hr>
+                      <div class="text-center mt-3">
+                        <p>
+                          Don't have an account
+                          <a href="singup.html">sign up</a>
+                        </p>
+                        <p class="text-dark">
+                          <a href="#">Didn't recieve confirmation instruction?</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer bg-danger mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="mt-3 text-white">APPSIMPACT</h2>
+          </div>
+          <div class="col-lg-4 mt-3">
+            <ul>
+              <li><a href="task.html" class="text-white">Home</a></li>
+              
+              <li><a href="#" class="text-white">About</a></li>
+              
+              <li><a href="#" class="text-white">Career</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mt-3">
+            <ul>
+              <li><a href="blogs.html" class="text-white">Blogs</a></li>
+              
+              <li><a href="#" class="text-white">Tutorials</a></li>
+              
+              <li><a href="#" class="text-white">Testimonials</a></li>
+              <div class="mt-2">
+                <a href="#offcanvasexample" data-bs-toggle="offcanvas" class="btn btn-dark btn-md" aria-control="offcanvasexample">Contact</a>
+                <div class="offcanvas offcanvas-end"id="offcanvasexample">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Contact</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <form>
+                      <div class="form-group mb-3 fw-bold">
+                        <label class="form-label">First name</label>
+                        <input type="email" class="form-control">
+                      </div>
+                      <div class="form-group mb-3 fw-bold">
+                        <label class="form-label">Last name</label>
+                        <input type="email" class="form-control">
+                      </div>
+                      <div class="form-group mb-3 fw-bold">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control">
+                      </div>
+                      <div class="form-group mb-3  fw-bold">
+                        <label class="form-label">Contact No</label>
+                        <input type="tel" class="form-control">
+                      </div>
+                      <div class="form-group mb-3 fw-bold">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" type="text"></textarea>
+                      </div>
+                      <a href="#" class="btn btn-md  btn-danger  d-grid">Send</a>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
